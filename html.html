@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        
+    <title>Chandan Tiwari | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Chandan Tiwari</h1>
+        <p>Software Developer</p>
+        
+        <nav>
+            <a href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#Skill">Skill</a>
+            <a href="#Project">Project</a>
+            <a href="#Contact">Contact</a>
+            <a href="#" id="loginBtn">Login</a>
+        </nav>
+    </header>
+
+
+    <!-- Home / Hero Section -->
+    <section id="Home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="hello">HELLO, I'M</p>
+
+            <h2>Chandan <span>Tiwari</span></h2>
+
+            <h3>Software Developer</h3>
+
+            <p class="hero-text">
+                Results-driven IT professional with 1.5 years of experience in ERP/IT 
+                operations and a strong interest in software development. Skilled in HTML, CSS, 
+                JavaScript, SQL, Python, and currently developing expertise in React.js and .NET. 
+                Experienced in building web interfaces, working with databases, troubleshooting technical issues, 
+                and developing practical software solutions. Passionate about learning modern 
+                technologies and growing as a Software Developer.
+            </p>
+
+            <div class="hero-buttons">
+                <button>Let's Work Together</button>
+            <a href="CHANDAN_KUMAR_TIWARI (1).pdf" download class="resume-btn">
+    Download Resume
+</a>
+               
+            </div>
+
+            <div class="social-icons">
+                <a href="https://github.comheychandantiwari" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/chandan-tiwari-8b7935319/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/thechandantiwari__/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="@ChandanTiwari-go9lw" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="hero-animation">
+
+            <div class="code-card html">HTML</div>
+
+            <div class="code-card css">CSS</div>
+
+            <div class="code-card js">JS</div>
+
+            <div class="code-card python">PY</div>
+
+
+            <!-- Monitor -->
+            <div class="monitor">
+
+                <div class="screen">
+
+                    <span>&lt;html&gt;</span>
+
+                    <span>
+                        const developer = "Chandan";
+                    </span>
+
+                    <span>
+                        SELECT * FROM skills;
+                    </span>
+
+                    <span>
+                        print("Hello World");
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- Desk -->
+            <div class="desk"></div>
+
+
+            <!-- Developer -->
+            <div class="developer">
+                👨‍💻
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="About">
+
+        <h2>About Me</h2>
+
+        <p>
+            I am interested in IT, ERP and Software development.
+            I am continuously improving my technical skills.
+        </p>
+
+    </section>
+
+
+    <!-- Skills -->
+    <section id="Skill">
+
+        <h2>My Skills</h2>
+
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Java</li>
+            <li>Python</li>
+            <li>SQL</li>
+            <li>Pandas</li>
+            <li>NumPy</li>
+        </ul>
+
+    </section>
+
+
+    <!-- Projects -->
+    <section id="Project">
+
+        <h2>My Projects</h2>
+
+        <article>
+
+            <h3>Portfolio Website</h3>
+
+            <p>
+                My personal portfolio website.
+            </p>
+
+        </article>
+
+
+        <article>
+
+            <h3>SQL Database Project</h3>
+
+            <p>
+                Employee management database using SQL.
+            </p>
+
+        </article>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="Contact">
+
+        <h2>Contact Me</h2>
+         
+         <div class="contact-container">
+
+        <div class="contact-info">
+            <h3>Let's Connect</h3>
+            <p>If you want to work with me, feel free to contact me.</p>
+
+            <p>Email: tiwarichandan29702@gmail.com</p>
+            <p>Mobile: 6203811404</p>
+            <p>GitHub: heychandantiwari04</p>
+        </div>
+        <div>
+
+        <form id="contactForm" class="contact-form">
+
+            <input type="text"
+            id="contactName"
+            placeholder="Your Name"
+            required
+            >
+           <input type="email"
+           id="contactEmail"
+           placeholder="Your Email"
+           required
+           >
+            <textarea
+             id="contactMessage"
+             placeholder="Your Message"
+             rows="6"
+             required
+            ></textarea>
+            <button type="submit">
+            Send Message
+            ></button>
+        
+        </form>
+        </div>  
+
+    </section>
+
+    <footer>
+
+        <p>
+            @2026 Chandan Tiwari. All Rights Reserved
+        </p>
+
+    </footer>
+
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="login-modal">
+
+        <div class="login-box">
+
+            <span id="closeLogin" class="close">
+                &times;
+            </span>
+
+            <h1>Welcome Back</h1>
+
+            <p>
+                Login to your portfolio
+            </p>
+
+            <form id="loginForm">
+
+                <label for="username">
+                    Username
+                </label>
+
+                <input
+                    type="text"
+                    id="username"
+                    placeholder="Enter username"
+                    required
+                >
+
+
+                <label for="password">
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter password"
+                    required
+                >
+
+
+                <button type="submit">
+                    Login
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <button id="topBtn" title="Go to Top">
+    ↑
+</button>
+</body>
+
+</html>
