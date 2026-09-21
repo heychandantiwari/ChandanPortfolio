@@ -1,3 +1,6 @@
+emailjs.init({
+    publicKey: "JO6QmGAwFeT9sT6Fo"
+});
 const loginBtn = document.querySelector("#loginBtn");
 const loginModal = document.querySelector("#loginModal");
 const closeLogin = document.querySelector("#closeLogin");
@@ -53,15 +56,21 @@ contactForm.addEventListener("submit", function (event) {
     const email = document.querySelector("#contactEmail").value;
     const message = document.querySelector("#contactMessage").value;
 
-    alert(
-        "Message Sent Successfully!\n\n" +
-        "Name: " + name +
-        "\nEmail: " + email +
-        "\nMessage: " + message
-    );
-
-    contactForm.reset();
-}); 
+    emailjs.send("service_bpa22to", "template_qavpcuz", {
+        name: name,
+        email: email,
+        message: message,
+        title: "New Portfolio Contact Message"
+    })
+    .then(function () {
+        alert("Message Sent Successfully!");
+        contactForm.reset();
+    })
+    .catch(function (error) {
+        console.error("EmailJS Error:", error);
+        alert("Message send nahi hua. Please try again.");
+    });
+});
 const sections = document.querySelectorAll("section");
 
 window.addEventListener("scroll", function () {
