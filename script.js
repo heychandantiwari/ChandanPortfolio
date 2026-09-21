@@ -30,7 +30,7 @@ loginForm.addEventListener("submit", function (event) {
         document.querySelector("#password").value;
 
 
-    if (username === "chandan" && password === "12345") {
+    if (username.trim() === "chandan" && password.trim() === "12345") {
 
         alert("Login Successful!");
 
