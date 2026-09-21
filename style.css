@@ -1892,3 +1892,39 @@ footer p::first-letter {
     }
 
 }
+.hero-animation {
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-animation img {
+    width: 420px;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 50%;
+    animation: none;
+    filter: drop-shadow(0 0 25px rgba(56, 189, 248, 0.2));
+}
+
+@keyframes imageFloat {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+@media (max-width: 900px) {
+    .hero-animation {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .hero-animation img {
+        max-width: 550px;
+    }
+}
