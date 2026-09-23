@@ -13,14 +13,15 @@
 </head>
 
 <body>
-    <div class="site-alert">
-    ⚠️ This website is currently under development. Some features may not be available yet.
+    <div class="site-alert" id="siteAlert">
+    ⚠️ This website is currently under development. Some features may not be available yet. 
+     kindly revisit again after some time. Thank you 😊
+    <button id="closeAlert" type="button" onclick="document.getElementById('siteAlert').style.display = 'none'">×</button>
 </div>
 
     <!-- Header -->
     <header>
-        <h1>Chandan Tiwari</h1>
-        <p>Software Developer</p>
+        <h1>&lt;/Chandan Tiwari/&gt;</h1>
         
         <nav>
             <a href="#Home">Home</a>
@@ -333,21 +334,19 @@
 
 </section>
 
-
-    <!-- Contact -->
     <section id="Contact">
 
-    <h2>Contact Me</h2>
+    <h2>Drop a Message.</h2>
 
     <div class="contact-container">
 
         <div class="contact-info">
 
-            <h3>Let's Connect</h3>
+            <h3>Connect With Me</h3>
 
             <p>
-                If you have a project, job opportunity or want to
-                discuss technology, feel free to contact me.
+                If you have a project, an opportunity, or simply feel like having a chat, 
+                feel free to reach out. I’d be happy to hear from you. ❤️
             </p>
 
             <div class="contact-item">
@@ -379,48 +378,96 @@
 
         <form id="contactForm" class="contact-form">
 
+    <div class="name-row">
+
+        <div class="form-group">
+            <label for="contactFirstName">FIRST NAME </label>
+
             <input
                 type="text"
-                id="contactName"
-                placeholder="Your Name"
+                id="contactFirstName"
+                placeholder="Adam"
                 required
             >
+        </div>
+
+        <div class="form-group">
+            <label for="contactLastName">LAST NAME </label>
 
             <input
-                type="email"
-                id="contactEmail"
-                placeholder="Your Email"
-                required
+                type="text"
+                id="contactLastName"
+                placeholder="Cole"
             >
+        </div>
 
-            <textarea
-                id="contactMessage"
-                placeholder="Your Message"
-                rows="6"
-                required
-            ></textarea>
+    </div>
 
-            <button type="submit">
-                Send Message
-            </button>
+    <div class="form-group">
+        <label for="contactEmail">EMAIL </label>
 
-        </form>
+        <input
+            type="email"
+            id="contactEmail"
+            placeholder="adamcole@example.com"
+            required
+        >
+    </div>
+
+    <div class="form-group">
+        <label for="contactMessage">MESSAGE </label>
+
+        <textarea
+            id="contactMessage"
+            placeholder="Drop your message..."
+            rows="5"
+            required
+        ></textarea>
+    </div>
+
+    <button type="submit">
+        Send Message
+    </button>
+
+</form>
 
     </div>
 
 </section>
 
-    <footer>
+<footer>
 
-        <p>
-            @2026 Chandan Tiwari. All Rights Reserved
-        </p>
+    <div class="footer-name">
+        &lt;/Chandan Tiwari/&gt;
+    </div>
 
-    </footer>
+    <p>
+        &copy; Copyright 2026, Made with ❤️ by
+        <span>Chandan Tiwari</span>
+    </p>
 
+    <div class="footer-social">
 
-    <!-- Login Modal -->
-    <div id="loginModal" class="login-modal">
+        <a href="https://github.com/heychandantiwari" target="_blank">
+            <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a href="https://www.instagram.com/thechandantiwari__/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/chandan-tiwari-8b7935319/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+
+        <a href="https://www.youtube.com/@ChandanTiwari-go9lw" target="_blank">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+
+    </div>
+
+</footer>
+       <div id="loginModal" class="login-modal">
 
         <div class="login-box">
 

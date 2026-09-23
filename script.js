@@ -105,3 +105,19 @@ topBtn.addEventListener("click", function () {
         behavior: "smooth"
     });
 });
+const siteAlert = document.querySelector("#siteAlert");
+const closeAlert = document.querySelector("#closeAlert");
+
+closeAlert.addEventListener("click", function () {
+    siteAlert.style.display = "none";
+});
+document.addEventListener("DOMContentLoaded", function () {
+
+    const siteAlert = document.getElementById("siteAlert");
+    const closeAlert = document.getElementById("closeAlert");
+
+    closeAlert.onclick = function () {
+        siteAlert.remove();
+    };
+
+});
