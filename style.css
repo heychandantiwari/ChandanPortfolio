@@ -47,7 +47,7 @@ section {
     min-height: 60vh;
 }
 
-section h2 {
+section h3 {
     font-size: 35px;
     margin-bottom: 25px;
     color: #38bdf8;
@@ -73,8 +73,8 @@ section h2 {
     font-size: 18px;
 }
 
-.hero h2 {
-    font-size: 65px;
+.hero h5 {
+    font-size: 25px;
     margin: 15px 0;
     color: white;
 }
@@ -2135,4 +2135,389 @@ footer > p span {
 
 #closeAlert:hover {
     color: #38bdf8;
+}
+/* =================================
+   PREMIUM HERO SECTION
+================================= */
+
+.hero {
+    min-height: calc(100vh - 80px);
+    padding: 70px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+
+    background:
+        radial-gradient(
+            circle at 75% 45%,
+            rgba(56, 189, 248, 0.12),
+            transparent 35%
+        ),
+        #0f172a;
+}
+
+
+/* LEFT CONTENT */
+
+.hero-content {
+    width: 55%;
+    max-width: 680px;
+    animation: heroTextIn 1s ease;
+}
+
+@keyframes heroTextIn {
+    from {
+        opacity: 0;
+        transform: translateX(-35px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* HELLO */
+
+.hello {
+    display: inline-block;
+
+    color: #38bdf8;
+    font-size: 14px;
+    font-weight: 700;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 12px;
+
+    position: relative;
+}
+
+.hello::after {
+    content: "";
+    display: inline-block;
+
+    width: 45px;
+    height: 2px;
+
+    background: #38bdf8;
+
+    margin-left: 12px;
+    vertical-align: middle;
+}
+
+
+/* NAME */
+
+.hero h3 {
+    font-size: 58px !important;
+
+    font-weight: 800;
+
+    letter-spacing: -2px;
+
+    color: #f8fafc !important;
+
+    margin: 5px 0 15px !important;
+}
+
+.hero h3 span {
+    color: #38bdf8 !important;
+}
+
+
+/* JOB TITLE */
+
+.hero h5 {
+    display: inline-block;
+
+    font-size: 23px !important;
+
+    font-weight: 600;
+
+    color: #cbd5e1 !important;
+
+    margin: 0 0 22px !important;
+
+    padding-left: 15px;
+
+    border-left: 3px solid #38bdf8;
+}
+
+
+/* DESCRIPTION */
+
+.hero-text {
+    max-width: 650px;
+
+    color: #94a3b8 !important;
+
+    font-size: 17px !important;
+
+    line-height: 1.9 !important;
+
+    margin-bottom: 30px;
+}
+
+
+/* BUTTONS */
+
+.hero-buttons {
+    display: flex;
+
+    gap: 14px;
+
+    margin-top: 25px;
+}
+
+.work-btn,
+.resume-btn {
+    height: 48px;
+
+    padding: 0 24px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    transition: all 0.3s ease;
+}
+
+
+/* WORK BUTTON */
+
+.work-btn {
+    background: #38bdf8 !important;
+
+    color: #020617 !important;
+
+    border: 1px solid #38bdf8;
+}
+
+.work-btn:hover {
+    transform: translateY(-4px);
+
+    background: #0ea5e9 !important;
+
+    box-shadow:
+        0 10px 30px rgba(56, 189, 248, 0.25);
+}
+
+
+/* RESUME BUTTON */
+
+.resume-btn {
+    background: transparent !important;
+
+    color: #f8fafc !important;
+
+    border: 1px solid #38bdf8 !important;
+}
+
+.resume-btn:hover {
+    transform: translateY(-4px);
+
+    background: rgba(56, 189, 248, 0.1) !important;
+
+    box-shadow:
+        0 10px 30px rgba(56, 189, 248, 0.12);
+}
+
+
+/* SOCIAL ICONS */
+
+.social-icons {
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 30px;
+}
+
+.social-icons a {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #334155;
+
+    border-radius: 10px;
+
+    color: #38bdf8;
+
+    background: rgba(15, 23, 42, 0.7);
+
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: translateY(-5px);
+
+    border-color: #38bdf8;
+
+    background: rgba(56, 189, 248, 0.1);
+
+    box-shadow:
+        0 8px 20px rgba(56, 189, 248, 0.15);
+}
+
+
+/* RIGHT SIDE IMAGE */
+
+.hero-animation {
+    width: 40%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    animation: heroImageIn 1.2s ease;
+}
+
+@keyframes heroImageIn {
+    from {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.hero-animation img {
+    width: 360px !important;
+    height: 360px !important;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 3px solid rgba(56, 189, 248, 0.5);
+
+    box-shadow:
+        0 0 0 15px rgba(56, 189, 248, 0.03),
+        0 0 60px rgba(56, 189, 248, 0.18);
+
+    transition: 0.4s ease;
+}
+
+.hero-animation img:hover {
+    transform: scale(1.03);
+
+    box-shadow:
+        0 0 0 20px rgba(56, 189, 248, 0.04),
+        0 0 80px rgba(56, 189, 248, 0.25);
+}
+
+
+
+@media (max-width: 900px) {
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 70px 5%;
+
+        gap: 50px;
+    }
+
+    .hero-content {
+        width: 100%;
+
+        max-width: 700px;
+
+        align-items: center;
+    }
+
+    .hero h3 {
+        font-size: 48px !important;
+    }
+
+    .hero h5 {
+        border-left: none;
+
+        border-bottom: 2px solid #38bdf8;
+
+        padding-left: 0;
+
+        padding-bottom: 8px;
+    }
+
+    .hero-text {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons,
+    .social-icons {
+        justify-content: center;
+    }
+
+    .hero-animation {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .hero {
+        padding: 55px 5%;
+    }
+
+    .hero h3 {
+        font-size: 38px !important;
+
+        letter-spacing: -1px;
+    }
+
+    .hero h5 {
+        font-size: 19px !important;
+    }
+
+    .hero-text {
+        font-size: 15px !important;
+
+        line-height: 1.8 !important;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+
+        width: 100%;
+
+        align-items: center;
+    }
+
+    .work-btn,
+    .resume-btn {
+        width: 100%;
+
+        max-width: 280px;
+    }
+
+    .hero-animation img {
+        width: 280px !important;
+        height: 280px !important;
+    }
 }
