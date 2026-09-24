@@ -25,6 +25,10 @@ closeLogin.addEventListener("click", function () {
 loginForm.addEventListener("submit", function (event) {
 
     event.preventDefault();
+    const loginButton = loginForm.querySelector(".login-submit");
+
+loginButton.classList.add("loading");
+const loginSuccess = document.querySelector("#loginSuccess");
 
     const username =
         document.querySelector("#username").value;
@@ -36,6 +40,10 @@ loginForm.addEventListener("submit", function (event) {
     if (username.trim() === "chandan" && password.trim() === "12345") {
 
         alert("Login Successful!");
+        loginSuccess.classList.add("show");
+        setTimeout(() => {
+    loginSuccess.classList.remove("show");
+}, 2000);
 
         loginModal.style.display = "none";
         loginBtn.textContent = "Logout";

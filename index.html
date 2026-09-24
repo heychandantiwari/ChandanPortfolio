@@ -456,62 +456,82 @@
     </div>
 
 </footer>
-       <div id="loginModal" class="login-modal">
+      <div id="loginModal" class="login-modal">
 
-        <div class="login-box">
+    <div class="login-box">
 
-            <span id="closeLogin" class="close">
-                &times;
-            </span>
+        <span id="closeLogin" class="close">&times;</span>
+
+        <div class="login-left">
 
             <h1>Welcome Back</h1>
 
-            <p>
+            <p class="login-subtitle">
                 Login to your portfolio
             </p>
 
             <form id="loginForm">
 
-                <label for="username">
-                    Username
-                </label>
+                <div class="input-group">
+                    <i class="fa-solid fa-user"></i>
+                    <input
+                        type="text"
+                        id="username"
+                        placeholder="Username"
+                        required
+                    >
+                </div>
 
-                <input
-                    type="text"
-                    id="username"
-                    placeholder="Enter username"
-                    required
-                >
+                <div class="input-group">
+                    <i class="fa-solid fa-lock"></i>
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Password"
+                        required
+                    >
+                </div>
 
-
-                <label for="password">
-                    Password
-                </label>
-
-                <input
-                    type="password"
-                    id="password"
-                    placeholder="Enter password"
-                    required
-                >
-
-
-                <button type="submit">
-                    Login
-                </button>
+             <button type="submit" class="login-submit">
+    <span class="login-text">Login</span>
+    <span class="login-loader"></span>
+</button>
 
             </form>
 
         </div>
 
+        <div class="login-right">
+
+            <div class="login-glow"></div>
+
+            <h2>CHANDAN</h2>
+            <h3>TIWARI</h3>
+
+            <p>
+                Software Developer
+            </p>
+
+            <span class="login-code">
+                &lt;/Developer/&gt;
+            </span>
+
+        </div>
+
     </div>
 
+</div>
 
     <!-- JavaScript -->
     <script src="script.js"></script>
     <button id="topBtn" title="Go to Top">
     ↑
 </button>
+<div id="loginSuccess" class="login-success">
+    <div class="success-circle">✓</div>
+    <h2>Login Successful</h2>
+    <p>Welcome back, Chandan!</p>
+</div>
 </body>
 
 </html>
