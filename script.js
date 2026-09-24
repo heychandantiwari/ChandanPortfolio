@@ -52,9 +52,12 @@ const contactForm = document.querySelector("#contactForm");
 contactForm.addEventListener("submit", function (event) {
     event.preventDefault();
 
-    const name = document.querySelector("#contactName").value;
-    const email = document.querySelector("#contactEmail").value;
-    const message = document.querySelector("#contactMessage").value;
+   const firstName = document.querySelector("#contactFirstName").value;
+const lastName = document.querySelector("#contactLastName").value;
+const email = document.querySelector("#contactEmail").value;
+const message = document.querySelector("#contactMessage").value;
+
+const name = firstName + " " + lastName;
 
     emailjs.send("service_bpa22to", "template_qavpcuz", {
         name: name,
@@ -110,14 +113,4 @@ const closeAlert = document.querySelector("#closeAlert");
 
 closeAlert.addEventListener("click", function () {
     siteAlert.style.display = "none";
-});
-document.addEventListener("DOMContentLoaded", function () {
-
-    const siteAlert = document.getElementById("siteAlert");
-    const closeAlert = document.getElementById("closeAlert");
-
-    closeAlert.onclick = function () {
-        siteAlert.remove();
-    };
-
 });

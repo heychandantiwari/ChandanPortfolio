@@ -2521,3 +2521,73 @@ footer > p span {
         height: 280px !important;
     }
 }
+@media (max-width: 700px) {
+
+    .cinematic-character {
+        width: 210px;
+        bottom: 10%;
+    }
+
+    .cinematic-name {
+        left: 50%;
+        top: 35%;
+        width: 95%;
+
+        transform:
+            translateX(-50%)
+            translateY(-50%);
+    }
+
+    .cinematic-name p {
+        font-size: 9px;
+        letter-spacing: 4px;
+    }
+
+    .cinematic-name h1 {
+        font-size: 48px;
+    }
+
+    .tech-card {
+        padding: 7px 10px;
+        font-size: 9px;
+    }
+
+    .tech-1 {
+        left: 4%;
+        top: 20%;
+    }
+
+    .tech-2 {
+        left: 4%;
+        top: 60%;
+    }
+
+    .tech-3 {
+        left: 8%;
+        top: 72%;
+    }
+
+    .tech-4 {
+        right: 4%;
+        top: 20%;
+    }
+
+    .tech-5 {
+        right: 4%;
+        top: 60%;
+    }
+
+    .tech-6 {
+        right: 8%;
+        top: 72%;
+    }
+
+    .enter-portfolio {
+        bottom: 4%;
+
+        padding: 12px 24px;
+
+        font-size: 11px;
+    }
+
+}
